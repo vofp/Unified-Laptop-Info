@@ -1,0 +1,82 @@
+Type,Name,Parse,Amazon,Newegg,Overstock,Rakuten Buy,Walmart
+Amazon,Other,string,ASIN,,,,
+Amazon,Other,string,Shipping,,,,
+Audio,Microphone,word,,Audio,,,
+Audio,Speaker,word,,Speaker,,,
+Communications,Internet,string,,Communication,,,Network Connection:
+Communications,LAN,string,,LAN,,,Network Connection:
+Communications,Wireless,word,Wireless Type,WLAN,Wi-Fi Standard,Wi-Fi Standard,Network Connection:
+Communications,Wi-Fi,bool,,,Wi-Fi,Wi-Fi,
+CPU,Brand,word,Processor Brand,,Processor Manufacturer,Processor Manufacturer,Processor Brand:
+CPU,Cashe,[float;word],,,Cache,Cache,
+CPU,Cores,int,Processor Count,,Processor Core,Processor Core,
+CPU,Speed,[float;word],,CPU Speed,Processor Speed,Processor Speed,
+CPU,Type,word,Processor,CPU Type,Processor Model,Processor Model,Processor Type:
+CPU,Type,word,,,Processor Type,Processor Type,
+CPU,Other,string,,CPU Support,,,
+CPU,64-bit,bool,,,64-bit Processing,64-bit Processing,
+Display,Aspect Ratio,int[2],,,Aspect Ratio,Aspect Ratio,
+Display,Resolution,int[2],Max Screen Resolution,Resolution,Screen Resolution,Screen Resolution,Resolution:
+Display,Size,[float;word],Screen Size,Screen,Screen Size,Screen Size,Laptop Screen Size:
+Display,Size,[float;word],Screen Size,Screen Size,,Screen Size,Laptop Screen Size:
+Display,Touchscreen,bool,,Touchscreen,Touchscreen,Touchscreen,
+Display,Other,string,,LCD Features,,,
+Display,Other,string,,Wide Screen Support,,,
+Display,Other,string,,,Backlight Technology,Backlight Technology,
+Display,Other,string,,,Display Screen Type,Display Screen Type,Screen Type:
+Display,Other,string,,,Screen Mode,Screen Mode,
+Graphics,Card,word,Graphics Coprocessor,Graphics Card,Graphics Controller Model,Graphics Controller Model,Graphics Card:
+Graphics,Manufacturer,word,,,Graphics Controller Manufacturer,Graphics Controller Manufacturer,
+Graphics,Memory,word,,Video Memory,Graphics Memory Accessibility,Graphics Memory Accessibility,
+Graphics,Type,string,,Graphic Type,,,
+Hard Drive,Drive,word,Hard Drive,HDD,,,Hard Drive Size:
+Hard Drive,HDD,[float;word],,,Hard Drive Capacity,Hard Drive Capacity,
+Hard Drive,SSD,[float;word],Flash Memory Size,,Solid State Drive Capacity,Solid State Drive Capacity,
+Hard Drive,Interface,string,Hard Drive Interface,,,,
+Hard Drive,RPM,int,Hard Drive Rotational Speed,HDD RPM,,,
+Manufacturer Warranty,Warranty,string,,Accidental Damage Warranty,,,
+Memory,Max,[float;word],,Max Memory Supported,,,Maximum Memory Expansion:
+Memory,RAM,[float;word],RAM,Memory Size,Standard Memory,Standard Memory,System Ram:
+Memory,RAM,[float;word],RAM,Memory,,Standard Memory,System Ram:
+Memory,RAM,[float;word],RAM,Memory Spec,,Standard Memory,System Ram:
+Memory,Type,word,Computer Memory Type,,Memory Technology,Memory Technology,
+Model,Brand,word,Brand Name,Brand,Manufacturer,Brand Name,
+Model,Brand,word,Brand Name,Brand,Brand Name,Manufacturer,
+Model,Model,word,Item model number,Model,Manufacturer Part Number,Product Model,Model No.:
+Model,Model,word,,,Product Model,Manufacturer Part Number,
+Model,Name,string,Name,Name,Product Name,Product Name,Name
+Model,Name,string,Name,Name,Name,Name,Name
+Model,Platform,word,Hardware Platform,,,,Platform:
+Model,Line,word,Series,Series,Product Line,Product Line,
+Model,Series,word,,,Product Series,Product Series,
+Model,Type,word,,Style,Product Type,Product Type,
+Model,Type,word,,Type,,,
+Model,Usage,string,,Usage,,,
+Model,Other,string,Date First Available,,,,
+Model,Other,string,,,Manufacturer Website Address,Manufacturer Website Address,
+Operating System,Architecture,[float;word],,,Operating System Architecture,Operating System Architecture,
+Operating System,OS,word,Operating System,Operating System,Operating System,Operating System,Operating System:
+Physical,Color,word,Color,Color,Color,Color,Primary Color:
+Physical,Contents,string,,,,Package Contents,Accessories Included:
+Physical,Dimensions,word,Item Dimensions  L x W x H,Dimensions,,,Product in Inches (L x W x H):
+Physical,Height,word,,,Height,Height,
+Physical,Width,word,,,Width,Width,
+Physical,Depth,word,,,Depth,Depth,
+Physical,Keyboard,string,,Keyboard,,,
+Physical,Shipping Weight,[float;word],Shipping Weight,,,,Shipping Weight (in pounds):
+Physical,Webcam,bool,,Webcam,Webcam,,
+Physical,Weight,[float;word],Item Weight:,Weight,Weight (Approximate),Weight (Approximate),
+Ports,Audio Ports,string,,Audio Ports,,,
+Ports,Card Reader,string,,Card Reader,,,Card Reader Type:
+Ports,USB,string,Number of USB 2.0 Ports,USB,Total Number of USB Ports,Total Number of USB Ports,
+Ports,USB,string,Number of USB 3.0 Ports,USB,,Total Number of USB Ports,
+Ports,Video,string,,HDMI,HDMI,HDMI,
+Ports,Video,string,,Video Port,,,
+Ports,Other,string,,,,,Connector Type:
+Power,AC Adapter,string,,AC Adapter,,,
+Power,Battery,word,Batteries,Battery,Battery Chemistry,Battery Chemistry,Battery Type:
+Power,Cells,int,,,Number of Cells,Number of Cells,
+Power,Green Authority,word,,,Green Compliance Certificate/Authority,Green Compliance Certificate/Authority,
+Power,Green Compliant,word,,,Green Compliant,Green Compliant,
+Price,Price,float,Price,Price,Price,Price,Price
+Walmart,Other,int,,,,,Walmart No.:
