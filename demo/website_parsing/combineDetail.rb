@@ -69,7 +69,7 @@ buy_doc = Nokogiri::HTML(open(url))
 buy_specs = {}
 
 buy_specs["Name"] = buy_doc.css(".pr-hidden-title").first.text.strip
-buy_specs["Price"] = buy_doc.css("#spanMainTotalPrice").first.text.strip
+# buy_specs["Price"] = buy_doc.css("#spanMainTotalPrice").first.text.strip
 
 buy_doc.css("#featuresAndSpecs tr").each do |item|
 	begin

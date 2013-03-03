@@ -2,6 +2,15 @@
 
 In this file, we will show the types of information that will be parsed and displayed.
 
+## Focus
+Currently we want to focus on parsing the information that can be compared
+* Screen Size
+* Resolution
+* HDD Size
+* Memory Size
+* CPU Speed
+
+
 ## CPU
 
 ### Speed
@@ -48,27 +57,27 @@ The speed of the CPU displayed as a value measured in GHz.  At this moment, we w
 
 
 ## Display
-
 ### Size
-
 #### Example
 * 15.6"
 * 11.6" IPS 
 * 10.1" 
-
 #### Regex
 `(\d+\.?\d*)"`
-
-
 #### Details names
 * Newegg
     + Screen Size
     + Screen
-
 ### Wide Screen
 <!-- Wide Screen Support -->
 ### Resolution
-<!-- Resolution -->
+#### Example
+* 1366 x 768
+#### Regex
+`(\d+\s*x\s*\d+)`
+#### Details names
+* Newegg
+    + Resolution
 ### Features
 <!-- LCD Features -->
 
@@ -97,6 +106,15 @@ The speed of the CPU displayed as a value measured in GHz.  At this moment, we w
 
 ## Hard Drive
 ### Size
+#### Example
+* 320GB
+* 500GB
+* 64GB SSD
+* 500GB
+* 1TB
+#### Regex
+`(\d+)(gb|tb)`
+#### Details name
 <!-- Hard Disk -->
 <!-- HDD -->
 ### RPM
@@ -106,8 +124,18 @@ The speed of the CPU displayed as a value measured in GHz.  At this moment, we w
 
 ## Memory
 ### Size
-<!-- Memory Size -->
-<!-- Memory -->
+#### Example
+2GB
+4GB
+2GB DDR3
+6GB
+8GB
+#### Regex
+`(\d+)(gb)`
+#### Details names
+* Newegg
+    + Memory Size
+    + Memory
 ### Speed
 <!-- Memory Speed -->
 ### Type
