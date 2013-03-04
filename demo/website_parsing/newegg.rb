@@ -19,14 +19,6 @@ doc.css("#Specs dl").each do |item|
 	specs[key] = data
 end
 
-# specs.each_pair{ |key, data|
-#     puts "#{key}: #{data}"
-# }
-r = Regexp.new("/\d+\.\d*\s*GHz/", Regexp::IGNORECASE)
-puts r.match(specs["CPU Type"])
-puts r.match(specs["CPU Speed"])
-puts r.match(specs["CPU Support"])
-puts specs["CPU Type"]
-puts specs["CPU Speed"]
-puts specs["CPU Support"]
-puts /\d+\.\d*/.match("1.2")
+specs.each_pair{ |key, data|
+    puts "#{key}: #{data}"
+}

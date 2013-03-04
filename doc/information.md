@@ -115,8 +115,9 @@ The speed of the CPU displayed as a value measured in GHz.  At this moment, we w
 #### Regex
 `(\d+)(gb|tb)`
 #### Details name
-<!-- Hard Disk -->
-<!-- HDD -->
+* Newegg
+    + Hard Disk
+    + HDD
 ### RPM
 <!-- HDD RPM -->
 ### Interface
