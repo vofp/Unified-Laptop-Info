@@ -5,7 +5,7 @@ require 'net/http'
 require 'uri'
  
 
-def parse_newegg(url)
+def parse_newegg_site(url)
     doc = Nokogiri::HTML(open(url))
 
     specs = {}
