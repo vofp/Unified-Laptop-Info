@@ -1,5 +1,5 @@
+require File.join(File.dirname(__FILE__), 'common')
 
-require_relative "./common.rb"
 def organizer_newegg(specs)
     output = {}
     output[:cpu_speed] = parse_detail(:cpu_speed,

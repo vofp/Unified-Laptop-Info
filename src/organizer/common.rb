@@ -4,20 +4,32 @@ def parse_detail(detail_name, *array)
         :resolution => "(\\d+)\\s*x\\s*(\\d+)",
         :hd_size => "(\\d+)\\s*(gb|tb)",
         :memory_size => "(\\d+)\\s*gb",
-        :screen_size => "(\\d+\\.?\\d*)\""
+        :screen_size => "(\\d+\\.?\\d*)\\s*(\"|inch)"
         }
     output = []
     for string in array
         output << parse_data(string, regex[detail_name])
     end
-    return output 
+    return output.flatten(1)
 end
 
 def parse_data(string, regex)
     r = Regexp.new(regex, Regexp::IGNORECASE)
-    if match = r.match(string.downcase)
-        return match.captures
-    end
-    return [] 
+    return string.scan(r) 
 end
 
+
+def organize_details(dataDictionary, specs)
+    output = {}
+    dataDictionary.each{ |detail, array|
+        detail_specs = []
+        array.each{ |string|
+            detail_specs << specs[string]
+        }
+        
+        output[detail] = parse_detail(detail,
+            *detail_specs
+        )   
+    }
+    return output
+end

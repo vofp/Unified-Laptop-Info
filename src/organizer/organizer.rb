@@ -1,4 +1,3 @@
-require_relative "./newegg.rb"
 
 $details = [:cpu_speed,:resolution,:hd_size,:memory_size,:screen_size]
 
@@ -14,15 +13,16 @@ def combine_cpu_speed(c_spec, spec)
     detail = :cpu_speed
     for data in spec[detail]
         next if data.empty?
-        display_detail = data[0] + "GHz"
+        number = '%.2f' % data[0]
+        display_detail = number + "GHz"
         if c_spec[detail].include?(display_detail)
-            c_spec[detail][display_detail][count] += 1;
+            c_spec[detail][display_detail][:count] += 1;
         else
             c_spec[detail][display_detail] = {
                 :count => 1, 
                 :votes => 0,
                 :data => data,
-                :sort => data[0].to_f
+                :sort => number.to_f
             }
         end
     end
@@ -34,7 +34,7 @@ def combine_resolution(c_spec, spec)
         next if data.empty?
         display_detail = data[0] + " x " + data[1]
         if c_spec[detail].include?(display_detail)
-            c_spec[detail][display_detail][count] += 1;
+            c_spec[detail][display_detail][:count] += 1;
         else
             c_spec[detail][display_detail] = {
                 :count => 1, 
@@ -86,7 +86,8 @@ def combine_screen_size(c_spec, spec)
     detail = :screen_size
     for data in spec[detail]
         next if data.empty?
-        display_detail = data[0]+"\""
+        number = '%.1f' % data[0]
+        display_detail = number+"\""
         if c_spec[detail].include?(display_detail)
             c_spec[detail][display_detail][:count] += 1;
         else
@@ -94,7 +95,7 @@ def combine_screen_size(c_spec, spec)
                 :count => 1, 
                 :votes => 0,
                 :data => data,
-                :sort => data[0].to_i
+                :sort => number.to_f
             }
         end
     end
