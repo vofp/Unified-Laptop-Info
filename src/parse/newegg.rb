@@ -4,6 +4,29 @@ require 'open-uri'
 require 'net/http'
 require 'uri'
  
+require File.join(File.dirname(__FILE__), 'common')
+
+
+def organizer_newegg(specs)
+    dataDictionary = {
+        :cpu_speed => [
+            "CPU Type",
+            "CPU Speed",
+            "CPU Support"],
+        :resolution => [
+            "Resolution"],
+        :hd_size => [
+            "Hard Disk", 
+            "HDD"],
+        :memory_size => [
+            "Memory Size", 
+            "Memory"],
+        :screen_size => [
+            "Screen Size", 
+            "Screen"]
+    }
+    return organize_details(dataDictionary,specs)
+end
 
 def parse_newegg_site(url)
     doc = Nokogiri::HTML(open(url))

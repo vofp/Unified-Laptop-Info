@@ -11,16 +11,17 @@ specs = {}
 
 specs["Name"] = doc.css(".pr-hidden-title").first.text.strip
 
-specs["Price"] = doc.css("#spanMainTotalPrice").first.text.strip
+# specs["Price"] = doc.css("#spanMainTotalPrice").first.text.strip
 
 doc.css("#featuresAndSpecs tr").each do |item|
 	begin
 		key = item.at_css("td:nth-child(2)").text.strip
 		data = item.at_css("td:nth-child(3)").text.strip
 		specs[key] = data
+        puts "\"#{key}\" \"#{data}\""
 	rescue Exception
 			
 	end
 end
 
-puts specs.keys
+# puts specs.keys

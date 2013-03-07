@@ -1,5 +1,5 @@
 
-require File.join(File.dirname(__FILE__), '../src/organizer/common')
+require File.join(File.dirname(__FILE__), '../src/parse/common')
 require "test/unit"
 
 

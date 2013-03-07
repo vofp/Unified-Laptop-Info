@@ -26,7 +26,6 @@ def organize_details(dataDictionary, specs)
         array.each{ |string|
             detail_specs << specs[string]
         }
-        
         output[detail] = parse_detail(detail,
             *detail_specs
         )   
