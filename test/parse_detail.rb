@@ -1,4 +1,5 @@
-require "../src/organizer/common"
+
+require File.join(File.dirname(__FILE__), '../src/organizer/common')
 require "test/unit"
 
 
@@ -14,7 +15,7 @@ class TestParseCpuSpeed < Test::Unit::TestCase
     end
 
     def test_invalid_input()
-        assert_equal([[]], parse_detail(:cpu_speed,""))
+        assert_equal([], parse_detail(:cpu_speed,""))
     end
 
 end
@@ -28,7 +29,7 @@ class TestParseResolution < Test::Unit::TestCase
     end
 
     def test_invalid_input()
-        assert_equal([[]], parse_detail(:resolution,""))
+        assert_equal([], parse_detail(:resolution,""))
     end
 
 end
@@ -46,7 +47,7 @@ class TestParseHdSize < Test::Unit::TestCase
     end
 
     def test_invalid_input()
-        assert_equal([[]], parse_detail(:hd_size,""))
+        assert_equal([], parse_detail(:hd_size,""))
     end
 
 end
@@ -60,7 +61,7 @@ class TestParseMemorySize < Test::Unit::TestCase
     end
 
     def test_invalid_input()
-        assert_equal([[]], parse_detail(:memory_size,""))
+        assert_equal([], parse_detail(:memory_size,""))
     end
 
 end
@@ -68,14 +69,14 @@ end
 class TestParseScreenSize < Test::Unit::TestCase
 
     def test_single_input()
-        assert_equal([["10.1"]],parse_detail(:screen_size,"10.1\""))
-        assert_equal([["15.6"]],parse_detail(:screen_size,"15.6\""))
-        assert_equal([["24"]],parse_detail(:screen_size,"24\""))
-        assert_equal([["2"]],parse_detail(:screen_size,"2\""))
+        assert_equal([["10.1", "\""]],parse_detail(:screen_size,"10.1\""))
+        assert_equal([["15.6", "\""]],parse_detail(:screen_size,"15.6 \""))
+        assert_equal([["24", "inch"]],parse_detail(:screen_size,"24inch"))
+        assert_equal([["2", "inch"]],parse_detail(:screen_size,"2 inch"))
     end
 
     def test_invalid_input()
-        assert_equal([[]], parse_detail(:screen_size,""))
+        assert_equal([], parse_detail(:screen_size,""))
     end
 
 end

@@ -1,4 +1,4 @@
-require "../src/parse/newegg"
+require File.join(File.dirname(__FILE__), "../src/parse/newegg")
 require "test/unit"
 
 

@@ -50,7 +50,7 @@ def combine_hd_size(c_spec, spec)
     detail = :hd_size
     for data in spec[detail]
         next if data.empty?
-        display_detail = data[0]+data[1]
+        display_detail = data[0]+data[1].upcase
         if c_spec[detail].include?(display_detail)
             c_spec[detail][display_detail][:count] += 1;
         else

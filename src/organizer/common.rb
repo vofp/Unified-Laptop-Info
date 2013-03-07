@@ -8,7 +8,7 @@ def parse_detail(detail_name, *array)
         }
     output = []
     for string in array
-        output << parse_data(string, regex[detail_name])
+        output << parse_data(string.downcase, regex[detail_name])
     end
     return output.flatten(1)
 end
