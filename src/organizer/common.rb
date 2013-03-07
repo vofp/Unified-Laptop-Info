@@ -14,9 +14,10 @@ def parse_detail(detail_name, *array)
 end
 
 def parse_data(string, regex)
-   r = Regexp.new(regex, Regexp::IGNORECASE)
+    r = Regexp.new(regex, Regexp::IGNORECASE)
     if match = r.match(string.downcase)
         return match.captures
     end
     return [] 
 end
+
