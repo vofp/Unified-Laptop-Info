@@ -8,6 +8,7 @@ def parse_detail(detail_name, *array)
         }
     output = []
     for string in array
+        next if string.nil?
         output << parse_data(string.downcase, regex[detail_name])
     end
     return output.flatten(1)
@@ -15,7 +16,9 @@ end
 
 def parse_data(string, regex)
     r = Regexp.new(regex, Regexp::IGNORECASE)
+    return [] if string.nil?
     return string.scan(r) 
+
 end
 
 

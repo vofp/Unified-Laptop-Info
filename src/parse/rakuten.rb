@@ -7,7 +7,7 @@ require 'uri'
 
 require File.join(File.dirname(__FILE__), 'common')
 
-def organizer_walmart(specs)
+def organizer_rakuten(specs)
     dataDictionary = {
         :cpu_speed => [
             "Processor Speed"],
@@ -34,9 +34,13 @@ def parse_rakuten_site(url)
     # specs["Price"] = doc.css("#spanMainTotalPrice").first.text.strip
 
     doc.css("#featuresAndSpecs tr").each do |item|
-        key = item.at_css("td:nth-child(2)").text.strip
-        data = item.at_css("td:nth-child(3)").text.strip
-        specs[key] = data
+        begin
+            key = item.at_css("td:nth-child(2)").text.strip
+            data = item.at_css("td:nth-child(3)").text.strip
+            specs[key] = data
+        rescue NoMethodError
+            next
+        end
     end
     return specs
 rescue OpenURI::HTTPError => e
@@ -44,8 +48,8 @@ rescue OpenURI::HTTPError => e
 end
 
 
-url = "http://www.buy.com/prod/asus-vivobook-s400ca-dh51t-14-1-led-ultrabook-intel-core-i5-i5-3317u-1/242783117.html?listingId=250509702"
+# url = "http://www.buy.com/prod/asus-vivobook-s400ca-dh51t-14-1-led-ultrabook-intel-core-i5-i5-3317u-1/242783117.html?listingId=250509702"
 
-specs = parse_rakuten_site(url)
-p organizer_walmart(specs)
+# specs = parse_rakuten_site(url)
+# p organizer_rakuten(specs)
 # puts specs.keys

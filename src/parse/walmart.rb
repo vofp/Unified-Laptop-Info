@@ -34,9 +34,13 @@ def parse_walmart_site(url)
     specs["Price"] = doc.css(".bigPriceText1").first.text.strip
 
     doc.css(".SpecTable tr").each do |item|
-		key = item.at_css("td:nth-child(1)").text.strip
-		data = item.at_css("td:nth-child(2)").text.strip
-		specs[key] = data
+        begin
+    		key = item.at_css("td:nth-child(1)").text.strip
+    		data = item.at_css("td:nth-child(2)").text.strip
+    		specs[key] = data
+        rescue NoMethodError
+            next
+        end
     end
     return specs
 rescue OpenURI::HTTPError => e

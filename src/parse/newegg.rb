@@ -38,9 +38,13 @@ def parse_newegg_site(url)
     specs["Name"] = doc.css(".wrapper span").first.text.strip
 
     doc.css("#Specs dl").each do |item|
-        key = item.at_css("dt").text
-        data = item.at_css("dd").text
-        specs[key] = data
+        begin
+            key = item.at_css("dt").text
+            data = item.at_css("dd").text
+            specs[key] = data
+        rescue NoMethodError
+            next
+        end
     end
 
     return specs
