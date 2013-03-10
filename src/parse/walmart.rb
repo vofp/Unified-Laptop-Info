@@ -7,21 +7,7 @@ require 'uri'
 require File.join(File.dirname(__FILE__), 'common')
 
 def organizer_walmart(specs)
-    dataDictionary = {
-        :cpu_speed => [
-            "Processor Type:",
-            "Processor Speed:"],
-        :resolution => [
-            "Resolution:"],
-        :hd_size => [
-            "Hard Drive Size:"],
-        :memory_size => [
-            "Maximum Memory Expansion:",
-            "System Ram:"],
-        :screen_size => [
-            "Laptop Screen Size:"]
-    }
-    return organize_details(dataDictionary,specs)
+    return organize_details(:walmart,specs)
 end
 
 def parse_walmart_site(url)

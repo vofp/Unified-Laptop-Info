@@ -8,20 +8,7 @@ require 'uri'
 require File.join(File.dirname(__FILE__), 'common')
 
 def organizer_rakuten(specs)
-    dataDictionary = {
-        :cpu_speed => [
-            "Processor Speed"],
-        :resolution => [
-            "Screen Resolution"],
-        :hd_size => [
-            "Hard Drive Capacity",
-            "Solid State Drive Capacity"],
-        :memory_size => [
-            "Standard Memory"],
-        :screen_size => [
-            "Screen Size"]
-    }
-    return organize_details(dataDictionary,specs)
+    return organize_details(:rakuten,specs)
 end
 
 def parse_rakuten_site(url)

@@ -8,24 +8,7 @@ require File.join(File.dirname(__FILE__), 'common')
 
 
 def organizer_newegg(specs)
-    dataDictionary = {
-        :cpu_speed => [
-            "CPU Type",
-            "CPU Speed",
-            "CPU Support"],
-        :resolution => [
-            "Resolution"],
-        :hd_size => [
-            "Hard Disk", 
-            "HDD"],
-        :memory_size => [
-            "Memory Size", 
-            "Memory"],
-        :screen_size => [
-            "Screen Size", 
-            "Screen"]
-    }
-    return organize_details(dataDictionary,specs)
+    return organize_details(:newegg,specs)
 end
 
 def parse_newegg_site(url)

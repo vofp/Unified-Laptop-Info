@@ -1,5 +1,6 @@
 
 require File.join(File.dirname(__FILE__), '../src/parse/common')
+require File.join(File.dirname(__FILE__), '../src/regex_details/edit')
 require "test/unit"
 
 

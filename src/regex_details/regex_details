@@ -1,4 +1,12 @@
 {
-:resolution{:newegg["Resolution"Resolution::
-regex"(\d+)\s*x\s*(\d+):rakuten["Screen Resolution:hd_size{;["Hard Disk"HDD"Hard Drive Size:;"(\d+)\s*(gb|tb);["Hard Drive Capacity"Solid State Drive Capacity:cpu_speed{;[
-"CPU Type"CPU Speed"CPU Support"Processor Type:"Processor Speed:;"(\d+\.\d*)\s*ghz;["Processor Speed:memory_size{;[	"Memory Size"Memory"Maximum Memory Expansion:"System Ram:;"(\d+)\s*gb;["Standard Memory:screen_size{;["Screen Size"Screen"Laptop Screen Size:;"(\d+\.?\d*)\s*("|inch);["Screen Size
+:hd_size{
+:any["Hard Disk:walmart["Hard Drive Size::rakuten["Hard Drive Capacity"Solid State Drive Capacity:
+regex"(\d+)\s*(gb|tb):newegg["Hard Disk"HDD:memory_size{
+;["Memory Size;["Maximum Memory Expansion:"System Ram:;["Standard Memory;	"(\d+)\s*gb;
+["Memory Size"Memory:screen_size{
+;["Screen Size;["Laptop Screen Size:;["Screen Size;	"(\d+\.?\d*)\s*("|inch);
+["Screen Size"Screen:cpu_speed{
+;["cpu_speed;["Processor Type:"Processor Speed:;["Processor Speed;	"(\d+\.\d*)\s*ghz;
+["CPU Type"CPU Speed"CPU Support:resolution{
+;["Resolution;["Resolution:;["Screen Resolution;	"(\d+)\s*x\s*(\d+);
+["Resolution

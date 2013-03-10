@@ -3,6 +3,8 @@ require 'nokogiri'
 require 'open-uri'
 require 'net/http'
 require 'uri'
+
+require File.join(File.dirname(__FILE__), '../regex_details/edit')
  
 $o_c_spec = {
     :screen_size=>{ 
@@ -23,23 +25,13 @@ $o_c_spec = {
 require File.join(File.dirname(__FILE__), 'common')
 
 require File.join(File.dirname(__FILE__), 'organizer')
+require File.join(File.dirname(__FILE__), '../regex_details/edit')
 
-$any_dataDictionary = {
-    :cpu_speed => [
-        "CPU Speed"],
-    :resolution => [
-        "Resolution"],
-    :hd_size => [
-        "Hard Disk"],
-    :memory_size => [
-        "Memory Size"],
-    :screen_size => [
-        "Screen Size"]
-}
 
 def organize_any(string)
+    load_regex
     output = {}
-    $any_dataDictionary.each{ |detail, array|
+    $regex.each{ |detail, array|
         output[detail] = parse_detail(detail,
             string
         )   
@@ -52,16 +44,15 @@ def parse_any_site(url)
 
     specs = organize_any(doc.to_s)
 
-    
-    
-
     return specs
 rescue OpenURI::HTTPError => e
     raise e
 end
 
-# url = "http://www.bhphotovideo.com/bnh/controller/home?O=&sku=891225&Q=&is=REG&A=details"
+new_regex
 
-# spec = parse_any_site(url)
+url = "http://www.bhphotovideo.com/bnh/controller/home?O=&sku=891225&Q=&is=REG&A=details"
 
-# p combine_any($o_c_spec, spec)
+spec = parse_any_site(url)
+
+p combine_any($o_c_spec, spec)
