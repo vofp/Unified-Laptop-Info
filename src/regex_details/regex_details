@@ -1,0 +1,4 @@
+{
+:resolution{:newegg["Resolution"Resolution::
+regex"(\d+)\s*x\s*(\d+):rakuten["Screen Resolution:hd_size{;["Hard Disk"HDD"Hard Drive Size:;"(\d+)\s*(gb|tb);["Hard Drive Capacity"Solid State Drive Capacity:cpu_speed{;[
+"CPU Type"CPU Speed"CPU Support"Processor Type:"Processor Speed:;"(\d+\.\d*)\s*ghz;["Processor Speed:memory_size{;[	"Memory Size"Memory"Maximum Memory Expansion:"System Ram:;"(\d+)\s*gb;["Standard Memory:screen_size{;["Screen Size"Screen"Laptop Screen Size:;"(\d+\.?\d*)\s*("|inch);["Screen Size
