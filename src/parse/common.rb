@@ -20,8 +20,9 @@ def organize_details(store, specs)
     output = {}
     $regex.each{ |detail, array|
         detail_specs = []
-        
+        next if !$regex[detail].include?(store)
         $regex[detail][store].each{ |string|
+            next if !specs.include?(string)
             detail_specs << specs[string]
         }
         output[detail] = parse_detail(detail,

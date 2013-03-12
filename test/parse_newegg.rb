@@ -11,7 +11,7 @@ class TestParseNewegg < Test::Unit::TestCase
         url = "http://www.newegg.com/Product/Product.aspx?Item=N82E16834230770"
         specs = parse_newegg_site(url)
         assert(!specs.empty?, "Website should have been parsed, and specs should not be empty.")
-        assert_equal(specs["Name"],"ASUS VivoBook S400CA-DH51T Touchscreen Ultrabook", "Name of laptop is incorrect")
+        assert_equal("ASUS VivoBook S400CA-DH51T Touchscreen Ultrabook", specs["Name"], "Name of laptop is incorrect")
     end
 
     def test_parse_invalid()
