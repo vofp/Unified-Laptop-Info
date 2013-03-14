@@ -23,4 +23,6 @@ doc.css("#prodDetails tr").each do |item|
 	end
 end
 
-puts specs.keys
+specs.each_pair{ |key, data|
+    puts "#{key}, #{data}"
+}

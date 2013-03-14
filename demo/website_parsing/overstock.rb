@@ -29,4 +29,6 @@ doc.css("#details_descFull li").each do |item|
 	end
 end
 
-puts specs.keys
+specs.each_pair{ |key, data|
+    puts "#{key}, #{data}"
+}

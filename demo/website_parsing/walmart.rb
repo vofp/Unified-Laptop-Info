@@ -18,10 +18,11 @@ doc.css(".SpecTable tr").each do |item|
 		key = item.at_css("td:nth-child(1)").text.strip
 		data = item.at_css("td:nth-child(2)").text.strip
 		specs[key] = data
-		puts "#{key}: #{data}"
 	rescue Exception
 			
 	end
 end
 
-puts specs.keys
+specs.each_pair{ |key, data|
+    puts "#{key}, #{data}"
+}

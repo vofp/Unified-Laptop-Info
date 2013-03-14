@@ -20,5 +20,5 @@ doc.css("#Specs dl").each do |item|
 end
 
 specs.each_pair{ |key, data|
-    puts "#{key}: #{data}"
+    puts "#{key}, #{data}"
 }

@@ -25,3 +25,8 @@ doc.css("#featuresAndSpecs tr").each do |item|
 end
 
 # puts specs.keys
+# 
+
+specs.each_pair{ |key, data|
+    puts "#{key}, #{data}"
+}
