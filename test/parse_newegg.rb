@@ -11,7 +11,7 @@ class TestParseNewegg < Test::Unit::TestCase
         url = "http://www.newegg.com/Product/Product.aspx?Item=N82E16834230770"
         specs = parse_newegg_site(url)
         assert(!specs.empty?, "Website should have been parsed, and specs should not be empty.")
-        assert_equal("ASUS VivoBook S400CA-DH51T Touchscreen Ultrabook", specs["Name"], "Name of laptop is incorrect")
+        assert_equal("ASUS VivoBook S400CA-DH51T 14\" Touchscreen Ultrabook", specs["Name"], "Name of laptop is incorrect")
     end
 
     def test_parse_invalid()
@@ -27,10 +27,10 @@ class TestParseNewegg < Test::Unit::TestCase
  
      def test_organizer
         output = organizer_newegg($specs_newegg)
-        assert_equal([["1.70"], ["2.6"]],output[:cpu_speed])
+        assert_equal([["1.70"]],output[:cpu_speed])
         assert_equal([["1366", "768"]],output[:resolution])
         assert_equal([["500", "gb"], ["24", "gb"], ["500", "gb"], ["24", "gb"]],output[:hd_size])
-        assert_equal([["4"], ["4"]],output[:memory_size])
+        assert_equal([["4", "gb"], ["4", "gb"], ["4", "gb"]],output[:ram_size])
         assert_equal([["14", "\""], ["14", "\""]],output[:screen_size])
     end
 

@@ -1,0 +1,82 @@
+64_bit,overstock,64-bit Processing
+64_bit,rakutenbuy,64-bit Processing
+aspect_ratio,newegg,LCD Features
+aspect_ratio,overstock,Aspect Ratio
+aspect_ratio,rakutenbuy,Aspect Ratio
+audio_port,newegg,Audio Ports
+cpu_cache,newegg,CPU Support
+cpu_cache,overstock,Cashe
+cpu_cache,rakutenbuy,Cache
+cpu_core,amazon,Processor Count
+cpu_core,overstock,Processor Core
+cpu_core,rakutenbuy,Processor Core
+cpu_speed,amazon,Processor
+cpu_speed,newegg,CPU Speed
+cpu_speed,overstock,Processor Speed
+cpu_speed,rakutenbuy,Processor Speed
+cpu_speed_turbo,newegg,CPU Support
+depth,overstock,Depth
+depth,rakutenbuy,Depth
+dimensions,newegg,Dimensions
+dimensions,walmart,Product in Inches (L x W x H):
+green_compliant,overstock,Green Compliant
+hd_size,amazon,Hard Drive
+hd_size,newegg,Hard Disk
+hd_size,newegg,HDD
+hd_size,overstock,Hard Drive Capacity
+hd_size,rakutenbuy,Hard Drive Capacity
+hd_size,walmart,Hard Drive Size:
+hd_size,walmart,Hard Drive:
+hd_speed,amazon,Hard Drive Rotational Speed
+hd_speed,newegg,HDD RPM
+hd_speed,walmart,Hard Drive:
+hdmi,overstock,HDMI
+hdmi,rakutenbuy,HDMI
+hdmi_num,newegg,HDMI
+height,overstock,Height
+height,rakutenbuy,Height
+os_arch,overstock,Operating System Architecture
+price,amazon,Price
+price,overstock,Price
+price,walmart,Price
+ram_max,newegg,Max Memory Supported
+ram_size,amazon,RAM
+ram_size,newegg,Memory Size
+ram_size,newegg,Memory
+ram_size,newegg,Memory Spec
+ram_size,overstock,Standard Memory
+ram_size,rakutenbuy,Standard Memory
+resolution,amazon,Max Screen Resolution
+resolution,newegg,Resolution
+resolution,overstock,Screen Resolution
+resolution,rakutenbuy,Screen Resolution
+screen_response_time,newegg,LCD Features
+screen_size,amazon,Screen Size
+screen_size,newegg,Screen
+screen_size,newegg,Screen Size
+screen_size,overstock,Screen Size
+screen_size,rakutenbuy,Screen Size
+ssd_size,amazon,Flash Memory Size
+ssd_size,newegg,Hard Disk
+ssd_size,newegg,HDD
+ssd_size,overstock,Solid State Drive Capacity
+ssd_size,rakutenbuy,Solid State Drive Capacity
+ssd_size,walmart,Hard Drive:
+touchscreen,newegg,Touchscreen
+touchscreen,rakutenbuy,Touchscreen
+usb_2_num,amazon,Number of USB 2.0 Ports
+usb_2_num,newegg,USB
+usb_3_num,amazon,Number of USB 3.0 Ports
+usb_3_num,newegg,USB
+usb_num,overstock,Total Number of USB Ports
+usb_num,rakutenbuy,Total Number of USB Ports
+vga_num,newegg,Video Port
+webcam,rakutenbuy,Webcam
+weight,newegg,Weight
+weight,overstock,Weight (Approximate)
+weight,rakutenbuy,Weight (Approximate)
+weight,walmart,Shipping Weight (in pounds):
+wide_screen,newegg,Wide Screen Support
+width,overstock,Width
+width,rakutenbuy,Width
+wifi,rakutenbuy,Wi-Fi

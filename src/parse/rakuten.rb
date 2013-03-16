@@ -8,7 +8,7 @@ require 'uri'
 require File.join(File.dirname(__FILE__), 'common')
 
 def organizer_rakuten(specs)
-    return organize_details(:rakuten,specs)
+    return organize_details(:rakutenbuy,specs)
 end
 
 def parse_rakuten_site(url)

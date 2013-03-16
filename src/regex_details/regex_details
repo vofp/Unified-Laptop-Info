@@ -1,12 +1,20 @@
-{
-:cpu_speed{
-:
-regexI"(\d+\.\d*)\s*ghz:ET:newegg[I"CPU Type;TI"CPU Speed;TI"CPU Support;T:rakuten[I"Processor Speed;T:walmart[I"Processor Type:;TI"Processor Speed:;T:any[I"cpu_speed;T:resolution{
-;I"(\d+)\s*x\s*(\d+);T;[I"Resolution;T;	[I"Screen Resolution;T;
-[I"Resolution:;T;[I"Resolution;T:hd_size{
-;I"(\d+)\s*(gb|tb);T;[I"Hard Disk;TI"HDD;T;	[I"Hard Drive Capacity;TI"Solid State Drive Capacity;T;
-[I"Hard Drive Size:;T;[I"Hard Disk;T:memory_size{
-;I"(\d+)\s*gb;T;[I"Memory Size;TI"Memory;T;	[I"Standard Memory;T;
-[I"Maximum Memory Expansion:;TI"System Ram:;T;[I"Memory Size;T:screen_size{
-;I"(\d+\.?\d*)\s*("|inch);T;[I"Screen Size;TI"Screen;T;	[I"Screen Size;T;
-[I"Laptop Screen Size:;T;[I"Screen Size;T
+{&:64_bit{:
+regexI"(yes|no):ET:overstock[I"64-bit Processing;T:rakutenbuy[I"64-bit Processing;T:aspect_ratio{	;I"\d+:\d+;T:newegg[I"LCD Features;T;[I"Aspect Ratio;T;	[I"Aspect Ratio;T:audio_port{;I"\d;T;[I"Audio Ports;T:cpu_cache{	;I"(\d+)\s*mb;T;[I"CPU Support;T;[I"
+Cashe;T;	[I"
+Cache;T:cpu_core{	;I"\d;T:amazon[I"Processor Count;T;[I"Processor Core;T;	[I"Processor Core;T:cpu_speed{
+;I"(\d+\.\d*)\s*ghz;T;[I"Processor;T;[I"CPU Speed;T;[I"Processor Speed;T;	[I"Processor Speed;T:cpu_speed_turbo{;I"(\d+\.\d*)\s*ghz;T;[I"CPU Support;T:
+depth{;I"(\d+\.*\d*);T;[I"
+Depth;T;	[I"
+Depth;T:dimensions{;I".*;T;[I"Dimensions;T:walmart[I"#Product in Inches (L x W x H):;T:green_compliant{;I"(yes|no);T;[I"Green Compliant;T:hd_size{;I"(\d+)\s*(gb|tb);T;[I"Hard Drive;T;[I"Hard Disk;TI"HDD;T;[I"Hard Drive Capacity;T;	[I"Hard Drive Capacity;T;[I"Hard Drive Size:;TI"Hard Drive:;T:hd_speed{	;I"(\d+)\s*rpm;T;[I" Hard Drive Rotational Speed;T;[I"HDD RPM;T;[I"Hard Drive:;T:	hdmi{;I"(yes|no);T;[I"	HDMI;T;	[I"	HDMI;T:hdmi_num{;I"\d;T;[I"	HDMI;T:height{;I"(\d+\.*\d*);T;[I"Height;T;	[I"Height;T:os_arch{;I"\d+;T;[I""Operating System Architecture;T:
+price{	;I"(\d+\.*\d*);T;[I"
+Price;T;[I"
+Price;T;[I"
+Price;T:ram_max{;I"(\d+)\s*(gb|tb);T;[I"Max Memory Supported;T:ram_size{
+;I"(\d+)\s*(gb|tb);T;[I"RAM;T;[I"Memory Size;TI"Memory;TI"Memory Spec;T;[I"Standard Memory;T;	[I"Standard Memory;T:resolution{
+;I"(\d+)\s*x\s*(\d+);T;[I"Max Screen Resolution;T;[I"Resolution;T;[I"Screen Resolution;T;	[I"Screen Resolution;T:screen_response_time{;I"(\d+)ms;T;[I"LCD Features;T:screen_size{
+;I"(\d+\.*\d*)\s*(\"|inch);T;[I"Screen Size;T;[I"Screen;TI"Screen Size;T;[I"Screen Size;T;	[I"Screen Size;T:ssd_size{;I"(\d+)\s*(gb|tb);T;[I"Flash Memory Size;T;[I"Hard Disk;TI"HDD;T;[I"Solid State Drive Capacity;T;	[I"Solid State Drive Capacity;T;[I"Hard Drive:;T:touchscreen{;I"(yes|no);T;[I"Touchscreen;T;	[I"Touchscreen;T:usb_2_num{;I"\d;T;[I"Number of USB 2.0 Ports;T;[I"USB;T:usb_3_num{;I"\d;T;[I"Number of USB 3.0 Ports;T;[I"USB;T:usb_num{;I"\d;T;[I"Total Number of USB Ports;T;	[I"Total Number of USB Ports;T:vga_num{;I"\d;T;[I"Video Port;T:webcam{;I"(yes|no);T;	[I"Webcam;T:weight{
+;I"(\d+\.*\d*);T;[I"Weight;T;[I"Weight (Approximate);T;	[I"Weight (Approximate);T;[I"!Shipping Weight (in pounds):;T:wide_screen{;I"(yes|no);T;[I"Wide Screen Support;T:
+width{;I"(\d+\.*\d*);T;[I"
+Width;T;	[I"
+Width;T:	wifi{;I"(yes|no);T;	[I"
+Wi-Fi;T

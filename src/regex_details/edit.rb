@@ -36,6 +36,25 @@ def new_regex
     return $regex
 end
 
+def new_regex_csv(filename_regex,filename_detail)
+    $regex = {}
+    filename_regex = File.join(File.dirname(__FILE__), filename_regex)
+    file = File.open(filename_regex, 'r')
+    file.each do |line|
+        line = line.chomp.split(',')
+        add_regex(line[0].strip.to_sym, line[1])
+    end
+
+    filename_detail = File.join(File.dirname(__FILE__), filename_detail)
+    file = File.open(filename_detail, 'r')
+    file.each do |line|
+        line = line.chomp.split(',')
+        add_detail(line[0].strip.to_sym, line[1].strip.to_sym, line[2])
+    end
+    save_regex
+    return $regex
+end
+
 def load_regex
     $regex = load_obj($regex_file)
 end
@@ -45,7 +64,9 @@ def save_regex
 end
 
 def add_detail(detail, store, *name)
-    return if !$regex.include?(detail)
+    if !$regex.include?(detail)
+        $regex[detail] = {:regex => ".*"}
+    end
     if $regex[detail].include?(store)
         $regex[detail][store] += name
     else
@@ -62,4 +83,4 @@ def add_regex(detail, regex)
     end
 end
 
-new_regex
+p new_regex_csv("add_regex.csv", "add_detail.csv")

@@ -13,7 +13,7 @@ Currently we want to focus on parsing the information that can be compared
 
 ## CPU
 
-### Speed
+### Speed ()
 The speed of the CPU displayed as a value measured in GHz.  At this moment, we will not allow anything else for simplicity.
 
 #### Example
