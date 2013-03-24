@@ -1,33 +1,33 @@
-64_bit,(yes|no)
-aspect_ratio,\d+:\d+
-audio_port,\d
-cpu_cache,(\d+)\s*mb
-cpu_core,\d
-cpu_speed,(\d+\.\d*)\s*ghz
-cpu_speed_turbo,(\d+\.\d*)\s*ghz
-depth,(\d+\.*\d*)
-dimensions,.*
-green_compliant,(yes|no)
-hd_size,(\d+)\s*(gb|tb)
-hd_speed,(\d+)\s*rpm
-hdmi,(yes|no)
-hdmi_num,\d
-height,(\d+\.*\d*)
-os_arch,\d+
-price,(\d+\.*\d*)
-ram_max,(\d+)\s*(gb|tb)
-ram_size,(\d+)\s*(gb|tb)
-resolution,(\d+)\s*x\s*(\d+)
-screen_response_time,(\d+)ms
-screen_size,(\d+\.*\d*)\s*(\"|inch)
-ssd_size,(\d+)\s*(gb|tb)
-touchscreen,(yes|no)
-usb_2_num,\d
-usb_3_num,\d
-usb_num,\d
-vga_num,\d
-webcam,(yes|no)
-weight,(\d+\.*\d*)
-wide_screen,(yes|no)
-width,(\d+\.*\d*)
-wifi,(yes|no)
+64_bit,(yes|no),%s
+aspect_ratio,(\d+):(\d+),%d:%d
+audio_port,(\d),%d
+cpu_cache,(\d+)\s*mb,%dMB
+cpu_core,(\d),%d
+cpu_speed,(\d+\.\d*)\s*ghz,%.2f GHz
+cpu_speed_turbo,(\d+\.\d*)\s*ghz,%.2f GHz
+depth,(\d+\.*\d*),"%.2f\"""
+dimensions,"(\d+\.?\d*)\""?\Wx\W(\d+\.?\d*)\""?\Wx\W(\d+\.?\d*)\""?",%.2f x %.2f x %.2f
+green_compliant,(yes|no),%s
+hd_size,(\d+)\s*(gb|tb),%d%s
+hd_speed,(\d+)\s*rpm,%d rpm
+hdmi,(yes|no),%s
+hdmi_num,(\d),%d
+height,(\d+\.*\d*),%.2f
+os_arch,(\d+),%d-bit
+price,(\d+\.*\d*),$%.2f
+ram_max,(\d+)\s*(gb|tb),%d%s
+ram_size,(\d+)\s*(gb|tb),%d%s
+resolution,(\d+)\s*x\s*(\d+),%d x %d
+screen_response_time,(\d+)ms,%dms
+screen_size,"(\d+\.*\d*)\s*(\""|inch)","%.2f\"""
+ssd_size,(\d+)\s*(gb|tb),%d%s
+touchscreen,(yes|no),%s
+usb_2_num,(\d),%d
+usb_3_num,(\d),%d
+usb_num,(\d),%d
+vga_num,(\d),%d
+webcam,(yes|no),%s
+weight,(\d+\.*\d*),%.2f
+wide_screen,(yes|no),%s
+width,(\d+\.*\d*),%.2f
+wifi,(yes|no),%s

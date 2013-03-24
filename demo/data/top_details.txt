@@ -1,0 +1,134 @@
+amazon
+"http://www.amazon.com/VivoBook-S400CA-DH51T-14-1-Inch-Touch-Ultrabook/dp/B009F1JL5A"
+
+newegg
+"http://www.newegg.com/Product/Product.aspx?Item=N82E16834230770"
+
+overstock
+"http://www.overstock.com/Electronics/Asus-S400CA-DH51T-14.1-LED-Ultrabook-Intel-Core-i5-i5-3317U-1.70-G/7458742/product.html?cid=123620"
+
+rakutenbuy
+"http://www.buy.com/prod/asus-vivobook-s400ca-dh51t-14-1-led-ultrabook-intel-core-i5-i5-3317u-1/242783117.html?listingId=250509702"
+
+walmart
+"http://www.walmart.com/ip/Asus-Grey-14.1-S400CA-DH51T-Ultrabook-PC-with-Intel-Core-i5-3317U-Processor-and-Windows-8-Operating-System/22306737?ci_src=14110944&ci_sku=22306737&sourceid=1500000000000003142050"
+
+cpu_core: 2
+cpu_speed: 1.70 GHz
+hd_size: 500gb
+hd_speed: 5400 rpm
+price: $686.99
+ram_size: 4gb
+usb_2_num: 2
+usb_3_num: 1
+brand: asus
+series: vivobook
+model: s400ca-dh51t
+Name: ASUS VivoBook S400CA-DH51T 14-Inch Touch Ultrabook
+Graphics Coprocessor: Intel HD Graphics 4000
+Wireless Type: 802.11bgn
+Hardware Platform: PC
+Operating System: Windows 8
+Item Weight: 4 pounds
+Item Dimensions  L x W x H: 13.35 x 0.83 x 9.40 inches
+Color: Black
+Processor Brand: Intel
+Computer Memory Type: DDR3 SDRAM
+Hard Drive Interface: Serial ATA-300
+Batteries:: 1 Lithium ion batteries required. (included)
+ASIN: B009F1JL5A
+Best Sellers Rank: #88 in Computers & Accessories (See top 100)
+  
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #14 
+    in Computers & Accessories > Notebooks
+Shipping Weight: 6.2 pounds (View shipping rates and policies)
+Shipping: Currently, item can be shipped only within the U.S.
+Date First Available: October 12, 2012
+aspect_ratio: 16:9
+audio_port: 1
+cpu_cache: 3MB
+cpu_speed_turbo: 2.60 GHz
+hdmi_num: 1
+ram_max: 4gb
+resolution: 1366 x 768
+screen_response_time: 16ms
+ssd_size: 24gb
+touchscreen: yes
+vga_num: 1
+weight: 4.00
+wide_screen: yes
+CPU Type: Intel Core i5
+Graphics Card: Intel HD Graphics 4000
+Video Memory: Shared system memory
+Communication: Gigabit LAN and WLAN
+GPU/VPU: Intel HD Graphics 4000
+Graphic Type: Integrated Card
+LAN: 10/100/1000Mbps
+WLAN: 802.11b/g/n Wireless LAN
+Audio: Built-in microphoneSonic Master
+Speaker: Integrated Stereo Speakers
+Keyboard: Chiclet Keyboard
+Card Reader: SD only
+Webcam: 0.3 Mega Pixel web camera (Fixed type)
+Style: Ultrabook
+Type: Mainstream
+Usage: Consumer
+AC Adapter: 65-watt AC adapter
+Battery: 44WHrs, 4000mAh,3S1P, 3-cell Li-ion Battery pack
+Accidental Damage Warranty: 1 Year Accidental Damage/30-Day Zero Bright Dot
+64_bit: yes
+depth: 9.40"\""
+hdmi: yes
+height: 0.80
+usb_num: 3
+webcam: yes
+width: 13.30
+wifi: yes
+Battery Chemistry: Lithium Ion (Li-Ion)
+Number of Cells: 3-cell
+Screen Mode: HD
+Graphics Controller Manufacturer: Intel
+Graphics Controller Model: HD 4000
+Graphics Memory Accessibility: Shared
+Display Screen Type: Active Matrix TFT Color LCD
+Backlight Technology: LED
+Product Type: Ultrabook
+Manufacturer Part Number: S400CA-DH51T
+Manufacturer Website Address: usa.asus.com
+Manufacturer: ASUS Computer International
+Product Name: VivoBook S400CA-DH51T Ultrabook
+Product Series: S400
+Memory Technology: DDR3 SDRAM
+Package Contents: VivoBook S400CA-DH51T UltrabookLithium Ion BatteryAC Adapter
+Green Compliant: Yes
+Green Compliance Certificate/Authority: RoHS
+Wi-Fi Standard: IEEE 802.11b/g/n
+Processor Type: Core i5
+Processor Model: i5-3317U
+Processor Manufacturer: Intel
+Operating System Architecture: 64-bit
